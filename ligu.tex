@@ -1,0 +1,233 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 
+%----------------------------------------------------------------------------------------
+ 
+\documentclass{resume} % Use the custom resume.cls style 
+
+\usepackage[left=0.4 in,top=0.3 in,right=0.4 in,bottom=0.3in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Li Gu} % Your name 
+\address{4002, 386 Yonge Street, Toronto, Ontario, Canada} % Your address 
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional) 
+\address{+14168369227 \\ li.gu@mail.utoronto.ca} % Your phone number and email
+
+\begin{document}  
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf University of Toronto} 
+\\
+{\em Department of Electrical and Computer Engineering}\hfill {September 2016 - June 2018}
+\\
+M.Eng Student, Focus: Machine Learning
+\\\
+
+{\bf Shanghai Jiaotong University}
+\\
+{\em Department of Electrical and Computer Engineering}\hfill {September 2011 - July 2015}
+\\
+BASc, Focus: Communication 
+ 
+
+
+\end{rSection} 
+
+% %----------------------------------------------------------------------------------------
+% %	TECHNICAL STRENGTHS SECTION
+% %----------------------------------------------------------------------------------------
+
+% \begin{rSection}{skills and courses}
+
+% \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }  
+% Skills & Python, C++, Matlab, Pytorch, Tensorflow, Caffe2, CUDA, AWS\\
+
+% Courses & Machine Learning, Probabilistic Graphical Model, Random Process, Computer Vision,\\& 
+% Bayesian Deep Learning, GPU Programming
+ 
+% \end{tabular}   
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATION
+%----------------------------------------------------------------------------------------
+
+
+\begin{rSection}{ Publication } \itemsep -3pt        
+ 
+ {Distilling the Posterior in Bayesian Neural Networks. Kaun-Chieh Wang, Paul Vicol, James Lucas, \textbf {Li Gu}, Richard Zemel, Roger Grosse. \textit{Submitted to ICML, 2018}}
+
+ {Graph-based Efficient WiFi Fingerprint Training Using Un-supervised Learning. Bo Zhao, Ling Pei, Changqing Xu, \textbf {Li Gu}. In\textit{Proceedings of the 28th International Technical Meeting of The Satellite Division of the Institute of Navigation (ION GNSS+ 2015)}}
+
+
+% {Zhao Bo, Pei Ling, Xu Changqing, \textbf {Gu Li}, " Graph-based Efficient WiFi Fingerprint Training Using Un-supervised Learning,"\textit{Proceedings of the 28th International Technical Meeting of The Satellite Division of the Institute of Navigation (ION GNSS+ 2015)}Tampa, Florida, September 2015, pp. 2301-2310.}
+
+
+ 
+\end{rSection}
+
+%-------------------------------------------------------------------------------
+%	PROJECTS
+
+\begin{rSection}{Research PROJECTS}
+
+\begin{rSubsection}{Video Instance Segmentation} 
+{March 2018 - Present}{}
+
+\item Proposed an end-to-end framework to apply Faster-RCNN to generate instance tracklets and flow field to extract motion information to video instance segmentation 
+\item Worked on optical flow from video with deep convolutional neural network with Pytorch
+\item Conducted experiments on DAVIS2017
+
+ 
+\end{rSubsection}  
+
+%------------------------------------------------
+
+\begin{rSubsection}{Investigating the optimization of LSTM on GPU}
+{February 2018 - Present}{}
+ 
+\item Developed custom CUDA kernel of LSTM with optimizations on single cell, single layer, multiple layer and on-chip memory for small mini-batch size 
+\item Conducted experiments of LSTM on DeepBench with custom kernel, CUDA Torch, and cuDNN6
+\item Conducted experiments of Neural Translation Machine with different CUDA kernels integrated into PyTorch
+\item Investigate the impact of data layouts and internal memory access pattern to further improve the memory efficiency
+\end{rSubsection}
+
+%-------------------------------------------------
+
+
+\begin{rSubsection}{Distilling the Posterior in Bayesian Neural Networks }
+{October 2017 - February 2018}{}
+ 
+\item Implemented optimitzers (MC-Dropout, SGLD) on Bayesian Neural Networks with Pytorch
+\item Conducted experiments on classification, anomaly detection, active learning and comparison of Generative Adversarial Networks  Formulations
+
+\end{rSubsection}
+
+%-------------------------------------------------- 
+
+\begin{rSubsection}{Discovering Team Strategies in Basketball from Spatiotemporal Data }
+{Februray 2017 - May 2017}{}    
+
+\item Proposed a framework with LSTM-Autoencoder to identify Offense Strategy        
+\item Proposed a framework to exploit hand-engineered features with Dynamic Time Warping and EM method to cluster Defense Formation
+\item Conducted experiments with SportVU dataset
+\end{rSubsection} 
+
+\end{rSection} 
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{skills and courses}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }  
+Skills & Python, C++, Matlab, Pytorch, Tensorflow, Caffe2, CUDA, AWS\\
+
+Courses & Machine Learning, Probabilistic Graphical Model, Random Process, Computer Vision,\\& 
+Bayesian Deep Learning, GPU Programming
+ 
+\end{tabular}   
+
+\end{rSection}
+
+% %--------------------------------------------------------------------------------------
+% %   Research Publications 
+% %--------------------------------------------------------------------------------------
+% \begin{rSection}{ Research Publication } \itemsep -3pt        
+
+% {\textbf{Akshay Vaishnav}, Path Lathiya, Mohit Sarvaiya"\textit{Design Optimization of Hydraulic Press Plate using Finite \\Element Analysis}"Vol. 6 - Issue 5, International Journal of Engineering Research and Applications (IJERA), \\ISSN: 2248-9622 } \hfill May 2016 \\    
+ 
+% \end{rSection}
+
+
+% %	INTERNSHIP/TRAININGS 
+% %----------------------------------------------------------------------------------------
+
+% \begin{rSection}{INTERNSHIP/TRAININGS} \itemsep -3pt  
+
+% {\textbf{Automotive Industry Simulation Internship}, \\Expertshub,Sinhgad Institute of Engineering, Pune } \hfill June 2015 \\   
+% {\textbf{Machining and Quality Control of Forged Connecting Rods}, \\Amul Group of Industries, Rajkot} \hfill February 2015 \\     
+
+% \end{rSection}  
+ 
+%  %-----------------------------------------------------------------------------
+%  % POSITION OF RESPONSIBILITY
+%  %-----------------------------------------------------------------------------
+  
+% \begin{rSection}{POSITION OF RESPONSIBILITY}
+
+% \begin{rSubsection}{CAE and Powertrain Lead, Formula SAE}{August 2015 - Present}{GT Motorsports,a Formula Student Team of GTU}{}              
+% \item Devised the design objectives and validation of designs through simulations and testings
+% \item Concentrated on real time simulation of Exhaust System and the noise reduction of Exhaust system
+% \item Part of core Design group in the team helping with various design decisions  
+% \item Performed numerous simulations of various components of the car in the area of FEA and CFD segments with documentations   
+% \end{rSubsection}  
+
+% %------------------------------------------------
+
+% \begin{rSubsection}{Head coordinator of Mechanical section at Robotics club} {July 2015 - May 2016}{Sanjaybhai Rajguru College of Engineering}{} 
+% \item A college level Robotics club established by students with the aim of learning and professional skill development \\among students and peers            
+% \item Lead in Mechanical work of Robotics club, working mostly with CAD and Hardware systems
+% \item Team leader and active member working to develop various robots of different concepts and configurations     
+% \end{rSubsection}
+
+% \end{rSection}
+  
+
+% %--------------------------------------------------------------------------------------
+% % Extra-Cirrucular
+% %--------------------------------------------------------------------------------------
+
+% \begin{rSection}{Extra-Cirrucular} \itemsep -2pt   
+
+% \begin{itemize}
+ 
+% \item STTP on \textbf{Life Long Research} under TEQIP-II, SVNIT, Surat \hfill February 2016 
+% \item Participated in \textbf{Formula Student India}, An International FSAE competition,  
+% \\Secured 9th rank overall \& 4th in Endurance \hfill January 2016  
+% \item Seminar on \textbf{Introduction to Robotics and Arduino Programming}, SRCOE,Rajkot \hfill July 2015 
+% \item \textbf{Junkyard}, BRIZINGER'15, a National Level Techfest,  GEC, Rajkot \hfill March-2015
+% \item Seminar on \textbf{Rapid Prototyping}, COGNIZANCE 2K14, a National Level Technical Festival, \\CSPIT, Charotar  \hfill September-2014   
+% \item \textbf{Rise of Machine}, PRAKARSH 9.0, a National Level Technical Symposium, SVIT, Vasad \hfill March-2014  
+  
+% \end{itemize}  
+
+
+% \end{rSection} 
+
+% %---------------------------------------------------------------------------------
+% %  DECLARATION
+% %--------------------------------------------------------------------------------
+
+% \begin{rSection}{ Declaration  } \itemsep -3pt        
+
+% \item I hereby declare that all the details furnished above are true to the best of my knowledge and belief.   
+  
+% \end{rSection}
+\end{document}
+
