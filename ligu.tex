@@ -26,7 +26,7 @@
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Li Gu} % Your name 
-\address{4002, 386 Yonge Street, Toronto, Ontario, Canada} % Your address 
+\address{4002, 386 Yonge Street, Toronto, ON, Canada} % Your address 
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional) 
 \address{+14168369227 \\ li.gu@mail.utoronto.ca} % Your phone number and email
 
@@ -78,7 +78,7 @@ BASc, Focus: Communication
 
 \begin{rSection}{ Publication } \itemsep -3pt        
  
- {Distilling the Posterior in Bayesian Neural Networks. Kaun-Chieh Wang, Paul Vicol, James Lucas, \textbf {Li Gu}, Richard Zemel, Roger Grosse. \textit{Submitted to ICML, 2018}}
+ {Distilling the Posterior in Bayesian Neural Networks. Kaun-Chieh Wang, Paul Vicol, James Lucas, \textbf {Li Gu}, Richard Zemel, Roger Grosse. \textit{ICML, 2018}}
 
  {Graph-based Efficient WiFi Fingerprint Training Using Un-supervised Learning. Bo Zhao, Ling Pei, Changqing Xu, \textbf {Li Gu}. In\textit{Proceedings of the 28th International Technical Meeting of The Satellite Division of the Institute of Navigation (ION GNSS+ 2015)}}
 
@@ -92,37 +92,39 @@ BASc, Focus: Communication
 %-------------------------------------------------------------------------------
 %	PROJECTS
 
-\begin{rSection}{Research PROJECTS}
+\begin{rSection}{Selected Projects}
 
-\begin{rSubsection}{Video Instance Segmentation} 
-{March 2018 - Present}{}
+\begin{rSubsection}{Video Object Segmentation} 
+{June 2018 - Present}{}
 
-\item Proposed an end-to-end framework to apply Faster-RCNN to generate instance tracklets and flow field to extract motion information to video instance segmentation 
-\item Worked on optical flow from video with deep convolutional neural network with Pytorch
-\item Conducted experiments on DAVIS2017
+\item Proposed an end-to-end framework including Mask-RCNN, FlowNet2 and custom matching and refine modules on video object segmentation 
+\item Exploited several engineered modifications on Mask-RCNN such as deformable convolution, heavier box head, balanced cross entropy loss , which improves performance by 25 percent on per-frame instance segmentation on DAVIS2017 
+\item Ranked 3rd on DAVIS 2017 leaderboard and submitting to ICCV 2019
 
  
 \end{rSubsection}  
 
 %------------------------------------------------
 
-\begin{rSubsection}{Investigating the optimization of LSTM on GPU}
-{February 2018 - Present}{}
+% \begin{rSubsection}{Investigating the optimization of LSTM on GPU}
+% {February 2018 - Present}{}
  
-\item Developed custom CUDA kernel of LSTM with optimizations on single cell, single layer, multiple layer and on-chip memory for small mini-batch size 
-\item Conducted experiments of LSTM on DeepBench with custom kernel, CUDA Torch, and cuDNN6
-\item Conducted experiments of Neural Translation Machine with different CUDA kernels integrated into PyTorch
-\item Investigate the impact of data layouts and internal memory access pattern to further improve the memory efficiency
-\end{rSubsection}
+% \item Developed custom CUDA kernel of LSTM with optimizations on single cell, single layer, multiple layer and on-chip memory for small mini-batch size 
+% \item Conducted experiments of LSTM on DeepBench with custom kernel, CUDA Torch, and cuDNN6
+% \item Conducted experiments of Neural Translation Machine with different CUDA kernels integrated into PyTorch
+% \item Investigate the impact of data layouts and internal memory access pattern to further improve the memory efficiency
+% \end{rSubsection}
 
 %-------------------------------------------------
 
 
 \begin{rSubsection}{Distilling the Posterior in Bayesian Neural Networks }
 {October 2017 - February 2018}{}
- 
-\item Implemented optimitzers (MC-Dropout, SGLD) on Bayesian Neural Networks with Pytorch
-\item Conducted experiments on classification, anomaly detection, active learning and comparison of Generative Adversarial Networks  Formulations
+
+\item Proposed a framework to distill MCMC samples from Stochastic Gradient Langevin Dynamics (SGLD) using a Generative Adversarial Netork (GAN), which incurs no loss in performance but reduces the storage overhead involved in maintaining MCMC samples
+\item Implemented an optimitzer called SGLD on Bayesian Neural Networks with PyTorch
+\item Conducted experiments on several Bayesian Neural Networks applications including classification, anomaly detection, active learning and stability of GANs
+\item Accepted to ICML 2018
 
 \end{rSubsection}
 
@@ -131,9 +133,10 @@ BASc, Focus: Communication
 \begin{rSubsection}{Discovering Team Strategies in Basketball from Spatiotemporal Data }
 {Februray 2017 - May 2017}{}    
 
-\item Proposed a framework with LSTM-Autoencoder to identify Offense Strategy        
-\item Proposed a framework to exploit hand-engineered features with Dynamic Time Warping and EM method to cluster Defense Formation
+\item Created data explorations by visulizing NBA players' trajectoreis and match statistics, which designed rules to decide the start and end timestep of each offense in basketball match
+\item Formulated players' trajectories into 2-D time series and exploited Dynamic Time Warping, EM algorithm and Hungarian algorithm to discover defense team's formation
 \item Conducted experiments with SportVU dataset
+
 \end{rSubsection} 
 
 \end{rSection} 
@@ -146,9 +149,9 @@ BASc, Focus: Communication
 \begin{rSection}{skills and courses}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }  
-Skills & Python, C++, Matlab, Pytorch, Tensorflow, Caffe2, CUDA, AWS\\
+Skills & Python, PyTorch, Tensorflow, Matlab, CUDA, C++\\
 
-Courses & Machine Learning, Probabilistic Graphical Model, Random Process, Computer Vision,\\& 
+Courses & Traditonal Machine Learning, Deep Learning, Random Process, Computer Vision,\\& 
 Bayesian Deep Learning, GPU Programming
  
 \end{tabular}   
