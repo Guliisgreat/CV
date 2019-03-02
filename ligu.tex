@@ -22,7 +22,7 @@
  
 \documentclass{resume} % Use the custom resume.cls style 
 
-\usepackage[left=0.4 in,top=0.3 in,right=0.4 in,bottom=0.3in]{geometry} % Document margins
+\usepackage[left=0.4 in,top=0.2 in,right=0.4 in,bottom=0.1 in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Li Gu} % Your name 
@@ -43,7 +43,10 @@
 {\em Department of Electrical and Computer Engineering}\hfill {September 2016 - June 2018}
 \\
 M.Eng. in Computer Engineering, GPA 90/100
-\\\
+
+{\bf Deep Learning Summer School} \hfill {July 2017, August 2018}
+\\
+{\em University of Montreal, University of Toronto}
 
 {\bf Shanghai Jiaotong University}
 \\
@@ -54,6 +57,20 @@ BASc. in Communication Engineering
 
 
 \end{rSection} 
+
+
+\begin{rSection}{skills and courses}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }  
+Skills & Python, PyTorch, Tensorflow, Matlab, CUDA, C++, AWS\\
+
+Courses & Machine Learning, Foundations of Computer Vision, Deep Learning in Computer Vision,\\& 
+Bayesian Deep Learning, Random Process, GPU Programming
+ 
+\end{tabular}   
+
+\end{rSection}
+
 
 % %----------------------------------------------------------------------------------------
 % %	TECHNICAL STRENGTHS SECTION
@@ -78,7 +95,7 @@ BASc. in Communication Engineering
 
 \begin{rSection}{ Publication } \itemsep -3pt        
  
- {Distilling the Posterior in Bayesian Neural Networks. Kaun-Chieh Wang, Paul Vicol, James Lucas, \textbf {Li Gu}, Richard Zemel, Roger Grosse. \textit{Proceedings of the 35th International Conference on Machine Learning, PMLR 80:5190-5199, 2018.}}
+ {Adversarial Distillation of Bayesian Neural Network Posteriors. Kaun-Chieh Wang, Paul Vicol, James Lucas, \textbf {Li Gu}, Richard Zemel, Roger Grosse. \textit{Proceedings of the 35th International Conference on Machine Learning, PMLR 80:5190-5199, 2018.}}
 
  {Graph-based Efficient WiFi Fingerprint Training Using Un-supervised Learning. Bo Zhao, Ling Pei, Changqing Xu, \textbf {Li Gu}. \textit{Proceedings of the 28th International Technical Meeting of The Satellite Division of the Institute of Navigation (ION GNSS+ 2015)}}
 
@@ -97,9 +114,9 @@ BASc. in Communication Engineering
 \begin{rSubsection}{Video Object Segmentation} 
 {June 2018 - Present}{}
 
-\item Proposed an end-to-end framework including Mask R-CNN, FlowNet, custom matching and refine modules on video object segmentation 
+\item Proposed an end-to-end framework including Mask R-CNN, FlowNet, custom matching and refine modules on video multiple objects segmentation 
 \item Exploited several modifications on Mask R-CNN such as deformable convolution, heavier box head, balanced cross entropy loss , which achieved 1.25x improvements on per-frame instance segmentation on DAVIS2017 
-\item Submitting to \textit{ICCV 2019}
+\item In preparation for \textit{ICCV 2019}
 
  
 \end{rSubsection}  
@@ -121,9 +138,9 @@ BASc. in Communication Engineering
 \begin{rSubsection}{Distilling the Posterior in Bayesian Neural Networks }
 {October 2017 - February 2018}{}
 
-\item Proposed a framework to distill MCMC samples from Stochastic Gradient Langevin Dynamics (SGLD) using a Generative Adversarial Netork (GAN), which incurs no loss in performance but reduces the storage overhead involved in maintaining MCMC samples
+\item Proposed a framework to distill MCMC samples from Stochastic Gradient Langevin Dynamics (SGLD) using a Generative Adversarial Netork (GAN), which reduces the storage overhead involved in maintaining MCMC samples without loss in performance
 \item Implemented an optimitzer called SGLD on Bayesian Neural Networks with PyTorch
-\item Conducted experiments on several Bayesian Neural Networks applications including classification, anomaly detection, active learning and stability of GANs
+\item Conducted experiments on several Bayesian Neural Networks applications including classification, anomaly detection, active learning
 \item Accepted to \textit{ICML 2018}
 
 \end{rSubsection}
@@ -146,17 +163,17 @@ BASc. in Communication Engineering
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{skills and courses}
+% \begin{rSection}{skills and courses}
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }  
-Skills & Python, PyTorch, Tensorflow, Matlab, CUDA, C++\\
+% \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }  
+% Skills & Python, PyTorch, Tensorflow, Matlab, CUDA, C++\\
 
-Courses & Machine Learning, Foundations of Computer Vision, Deep Learning in Computer Vision,\\& 
-Bayesian Deep Learning, Random Process, GPU Programming
+% Courses & Machine Learning, Foundations of Computer Vision, Deep Learning in Computer Vision,\\& 
+% Bayesian Deep Learning, Random Process, GPU Programming
  
-\end{tabular}   
+% \end{tabular}   
 
-\end{rSection}
+% \end{rSection}
 
 % %--------------------------------------------------------------------------------------
 % %   Research Publications 
